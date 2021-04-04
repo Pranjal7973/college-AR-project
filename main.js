@@ -2,6 +2,7 @@ console.log(faceapi.nets)
 
 const video = document.querySelector('#video')
 function play() {
+    if(navigator.mediaDevices.getUserMedia)
     navigator.mediaDevices.getUserMedia({
         video: true
     }).then(stream => {
