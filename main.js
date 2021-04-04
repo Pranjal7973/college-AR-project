@@ -1,4 +1,3 @@
-console.log(faceapi.nets)
 
 const video = document.querySelector('#video')
 function play() {
