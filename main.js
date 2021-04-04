@@ -10,14 +10,14 @@ function play() {
 }
 
 Promise.all([
-    faceapi.nets.ageGenderNet.loadFromUri('/weights'),
-    faceapi.nets.faceExpressionNet.loadFromUri('/weights'),
-    faceapi.nets.faceLandmark68Net.loadFromUri('/weights'),
-    faceapi.nets.faceLandmark68TinyNet.loadFromUri('/weights'),
+    faceapi.nets.ageGenderNet.loadFromUri('weights'),
+    faceapi.nets.faceExpressionNet.loadFromUri('weights'),
+    faceapi.nets.faceLandmark68Net.loadFromUri('weights'),
+    faceapi.nets.faceLandmark68TinyNet.loadFromUri('weights'),
     faceapi.nets.faceRecognitionNet,
-    faceapi.nets.mtcnn.loadFromUri('/weights'),
-    faceapi.nets.ssdMobilenetv1.loadFromUri('/weights'),
-    faceapi.nets.tinyFaceDetector.loadFromUri('/weights'),
+    faceapi.nets.mtcnn.loadFromUri('weights'),
+    faceapi.nets.ssdMobilenetv1.loadFromUri('weights'),
+    faceapi.nets.tinyFaceDetector.loadFromUri('weights'),
     // faceapi.nets.tinyYolov2.loadFromUri('/face-api.js/weights')
 ]).then(play)
 
