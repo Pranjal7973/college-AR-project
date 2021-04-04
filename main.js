@@ -3,9 +3,7 @@ console.log(faceapi.nets)
 const video = document.querySelector('#video')
 function play() {
     navigator.mediaDevices.getUserMedia({
-        video: {
-            facingMode: 'user',
-        },
+        video: true
     }).then(stream => {
         video.srcObject = stream
     })
